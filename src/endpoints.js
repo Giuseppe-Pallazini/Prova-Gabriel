@@ -36,9 +36,9 @@ server.post('/fatorial', (req, resp) => {
         let num = Number(req.query.num);
         const x = (fatorial(num));
         resp.send({
-            num: x
+            fat: x
         });
-    }
+    } 
     catch (err) {
         resp.status(404).send({
             error: err.message
@@ -48,7 +48,7 @@ server.post('/fatorial', (req, resp) => {
 
 server.post('/par', (req, resp) => {
     try {
-        const a = req.body.a;
+        const a = req.body;
         const x = sequencia(a);
 
         resp.send({

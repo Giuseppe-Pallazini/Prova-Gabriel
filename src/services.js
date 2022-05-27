@@ -49,14 +49,14 @@ export function semana(dia) {
     }
 }
 
-export function fatorial(num) {
-
-    let x = 1;
-    for (let i = num; i > 1; i--) {
-        x = x * i;
+export function fatorial(num){
+    let x = 1
+    for(let i = num; i > 1; i--) {
+        x = x * i
     }
-    return x
+    return x;
 }
+
 
 export function sequencia(limite) {
 
