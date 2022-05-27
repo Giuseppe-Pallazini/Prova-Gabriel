@@ -4,8 +4,8 @@ import 'dotenv/config'
 import endpoints from './endpoints.js'
  
 const server = express();
-server.use(endpoints);
 
+server.use(endpoints);
 server.use(cors());
 server.use(express());
 server.use(express.json());

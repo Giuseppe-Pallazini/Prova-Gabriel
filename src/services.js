@@ -1,46 +1,46 @@
 
-
 export function semaforo(cor) {
-    if (cor == "verde"){
+
+    if (cor == "verde") {
         return "Pode passar";
     }
 
-    else if (cor == "vermelho"){
+    else if (cor == "vermelho") {
         return "Aguarde";
     }
 
-    else{
+    else {
         return "Inválido"
     }
 }
 
-export function semana (dia) {
+export function semana(dia) {
 
-    if(dia == "0"){
+    if (dia == "0") {
         return "domingo"
     }
 
-    else if(dia == "1"){
+    else if (dia == "1") {
         return "segunda"
     }
 
-    else if(dia == "2"){
+    else if (dia == "2") {
         return "terça"
     }
 
-    else if(dia == "3"){
+    else if (dia == "3") {
         return "quarta"
     }
 
-    else if(dia == "4"){
+    else if (dia == "4") {
         return "quinta"
     }
 
-    else if(dia == "5"){
+    else if (dia == "5") {
         return "sexta"
     }
 
-    else if(dia == "6"){
+    else if (dia == "6") {
         return "sábado"
     }
 
@@ -49,15 +49,21 @@ export function semana (dia) {
     }
 }
 
-export function fatorial(num){
+export function fatorial(num) {
+
     let x = 1;
-    for(let i = num; i > 1; i--)
-    {
+    for (let i = num; i > 1; i--) {
         x = x * i;
     }
     return x
 }
 
-export function sequenciaPar(n) {
+export function sequencia(limite) {
 
+    for (let cont = 0; cont < limite; cont++)
+        if (cont % 2 == 0) {
+            return cont;
+        }
 }
+
+
