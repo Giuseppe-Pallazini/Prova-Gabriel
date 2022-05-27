@@ -36,7 +36,7 @@ server.post('/fatorial', (req, resp) => {
         let num = Number(req.query.num);
         const x = (fatorial(num));
         resp.send({
-            fat: x
+            num: x
         });
     }
     catch (err) {
