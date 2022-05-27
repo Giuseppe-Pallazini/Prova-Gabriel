@@ -48,3 +48,7 @@ export function semana (dia) {
         return "Inválido"
     }
 }
+
+export function fatorial(n){
+    for(let cont=; cont< n;cont--)
+}
